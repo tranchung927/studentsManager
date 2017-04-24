@@ -8,22 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		840D72421EADA2B4005E3C40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D72411EADA2B4005E3C40 /* AppDelegate.swift */; };
-		840D72441EADA2B4005E3C40 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D72431EADA2B4005E3C40 /* ViewController.swift */; };
 		840D72471EADA2B4005E3C40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840D72451EADA2B4005E3C40 /* Main.storyboard */; };
 		840D724A1EADA2B4005E3C40 /* studentsManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 840D72481EADA2B4005E3C40 /* studentsManager.xcdatamodeld */; };
 		840D724C1EADA2B4005E3C40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840D724B1EADA2B4005E3C40 /* Assets.xcassets */; };
 		840D724F1EADA2B4005E3C40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840D724D1EADA2B4005E3C40 /* LaunchScreen.storyboard */; };
+		84B16F341EADA519008AE438 /* StudensTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B16F331EADA519008AE438 /* StudensTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		840D723E1EADA2B4005E3C40 /* studentsManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = studentsManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840D72411EADA2B4005E3C40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		840D72431EADA2B4005E3C40 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		840D72461EADA2B4005E3C40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		840D72491EADA2B4005E3C40 /* studentsManager.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = studentsManager.xcdatamodel; sourceTree = "<group>"; };
 		840D724B1EADA2B4005E3C40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		840D724E1EADA2B4005E3C40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		840D72501EADA2B4005E3C40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B16F331EADA519008AE438 /* StudensTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudensTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				840D72411EADA2B4005E3C40 /* AppDelegate.swift */,
-				840D72431EADA2B4005E3C40 /* ViewController.swift */,
+				84B16F301EADA4B5008AE438 /* Services */,
+				84B16F311EADA4CC008AE438 /* Model */,
+				84B16F321EADA4D8008AE438 /* Controller */,
 				840D72451EADA2B4005E3C40 /* Main.storyboard */,
 				840D724B1EADA2B4005E3C40 /* Assets.xcassets */,
 				840D724D1EADA2B4005E3C40 /* LaunchScreen.storyboard */,
@@ -65,6 +67,28 @@
 				840D72481EADA2B4005E3C40 /* studentsManager.xcdatamodeld */,
 			);
 			path = studentsManager;
+			sourceTree = "<group>";
+		};
+		84B16F301EADA4B5008AE438 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		84B16F311EADA4CC008AE438 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		84B16F321EADA4D8008AE438 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84B16F331EADA519008AE438 /* StudensTableViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				840D724A1EADA2B4005E3C40 /* studentsManager.xcdatamodeld in Sources */,
-				840D72441EADA2B4005E3C40 /* ViewController.swift in Sources */,
+				84B16F341EADA519008AE438 /* StudensTableViewController.swift in Sources */,
 				840D72421EADA2B4005E3C40 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,6 +327,7 @@
 				840D72551EADA2B4005E3C40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
