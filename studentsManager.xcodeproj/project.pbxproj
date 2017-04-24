@@ -13,6 +13,7 @@
 		840D724C1EADA2B4005E3C40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 840D724B1EADA2B4005E3C40 /* Assets.xcassets */; };
 		840D724F1EADA2B4005E3C40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840D724D1EADA2B4005E3C40 /* LaunchScreen.storyboard */; };
 		84B16F341EADA519008AE438 /* StudensTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B16F331EADA519008AE438 /* StudensTableViewController.swift */; };
+		84B16F361EADAAD5008AE438 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B16F351EADAAD5008AE438 /* DataServices.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		840D724E1EADA2B4005E3C40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		840D72501EADA2B4005E3C40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84B16F331EADA519008AE438 /* StudensTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudensTableViewController.swift; sourceTree = "<group>"; };
+		84B16F351EADAAD5008AE438 /* DataServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServices.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 		84B16F301EADA4B5008AE438 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				84B16F351EADAAD5008AE438 /* DataServices.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 				840D724A1EADA2B4005E3C40 /* studentsManager.xcdatamodeld in Sources */,
 				84B16F341EADA519008AE438 /* StudensTableViewController.swift in Sources */,
 				840D72421EADA2B4005E3C40 /* AppDelegate.swift in Sources */,
+				84B16F361EADAAD5008AE438 /* DataServices.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

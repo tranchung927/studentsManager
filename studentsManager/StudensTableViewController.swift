@@ -9,8 +9,6 @@
 import UIKit
 
 class StudensTableViewController: UITableViewController {
-    
-    var students = ["Chung", "Tuân", "Hoàng", "Hùng", "Quang"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,14 +29,14 @@ class StudensTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return students.count
+        return DataServices.shared.students.count
     }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-        cell.textLabel?.text = students[indexPath.row]
+        cell.textLabel?.text = DataServices.shared.students[indexPath.row]
 
         return cell
     }
@@ -56,7 +54,7 @@ class StudensTableViewController: UITableViewController {
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            students.remove(at: indexPath.row)
+            DataServices.shared.students.remove(at: indexPath.row)
             // Delete the row from the data source
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
