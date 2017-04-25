@@ -35,9 +35,9 @@ class StudensTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-
-        cell.textLabel?.text = DataServices.shared.students[indexPath.row]
-
+        let student = DataServices.shared.students[indexPath.row]
+        cell.textLabel?.text = student.name
+        cell.detailTextLabel?.text = student.phoneNumber
         return cell
     }
     
