@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		840428801EAEC9BC0075EC28 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8404287F1EAEC9BC0075EC28 /* Student.swift */; };
+		840428881EAECBB20075EC28 /* studentsManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840428871EAECBB20075EC28 /* studentsManagerTests.swift */; };
 		840D72421EADA2B4005E3C40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 840D72411EADA2B4005E3C40 /* AppDelegate.swift */; };
 		840D72471EADA2B4005E3C40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 840D72451EADA2B4005E3C40 /* Main.storyboard */; };
 		840D724A1EADA2B4005E3C40 /* studentsManager.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 840D72481EADA2B4005E3C40 /* studentsManager.xcdatamodeld */; };
@@ -16,7 +18,21 @@
 		84B16F361EADAAD5008AE438 /* DataServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B16F351EADAAD5008AE438 /* DataServices.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		8404288A1EAECBB20075EC28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 840D72361EADA2B4005E3C40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 840D723D1EADA2B4005E3C40;
+			remoteInfo = studentsManager;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		8404287F1EAEC9BC0075EC28 /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		840428851EAECBB20075EC28 /* studentsManagerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = studentsManagerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		840428871EAECBB20075EC28 /* studentsManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = studentsManagerTests.swift; sourceTree = "<group>"; };
+		840428891EAECBB20075EC28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		840D723E1EADA2B4005E3C40 /* studentsManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = studentsManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		840D72411EADA2B4005E3C40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		840D72461EADA2B4005E3C40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -29,6 +45,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		840428821EAECBB20075EC28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		840D723B1EADA2B4005E3C40 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,10 +62,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		840428861EAECBB20075EC28 /* studentsManagerTests */ = {
+			isa = PBXGroup;
+			children = (
+				840428871EAECBB20075EC28 /* studentsManagerTests.swift */,
+				840428891EAECBB20075EC28 /* Info.plist */,
+			);
+			path = studentsManagerTests;
+			sourceTree = "<group>";
+		};
 		840D72351EADA2B4005E3C40 = {
 			isa = PBXGroup;
 			children = (
 				840D72401EADA2B4005E3C40 /* studentsManager */,
+				840428861EAECBB20075EC28 /* studentsManagerTests */,
 				840D723F1EADA2B4005E3C40 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				840D723E1EADA2B4005E3C40 /* studentsManager.app */,
+				840428851EAECBB20075EC28 /* studentsManagerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -82,6 +116,7 @@
 		84B16F311EADA4CC008AE438 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8404287F1EAEC9BC0075EC28 /* Student.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -97,6 +132,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		840428841EAECBB20075EC28 /* studentsManagerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8404288C1EAECBB20075EC28 /* Build configuration list for PBXNativeTarget "studentsManagerTests" */;
+			buildPhases = (
+				840428811EAECBB20075EC28 /* Sources */,
+				840428821EAECBB20075EC28 /* Frameworks */,
+				840428831EAECBB20075EC28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8404288B1EAECBB20075EC28 /* PBXTargetDependency */,
+			);
+			name = studentsManagerTests;
+			productName = studentsManagerTests;
+			productReference = 840428851EAECBB20075EC28 /* studentsManagerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		840D723D1EADA2B4005E3C40 /* studentsManager */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 840D72531EADA2B4005E3C40 /* Build configuration list for PBXNativeTarget "studentsManager" */;
@@ -124,6 +177,11 @@
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = admin;
 				TargetAttributes = {
+					840428841EAECBB20075EC28 = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 840D723D1EADA2B4005E3C40;
+					};
 					840D723D1EADA2B4005E3C40 = {
 						CreatedOnToolsVersion = 8.3;
 						ProvisioningStyle = Automatic;
@@ -144,11 +202,19 @@
 			projectRoot = "";
 			targets = (
 				840D723D1EADA2B4005E3C40 /* studentsManager */,
+				840428841EAECBB20075EC28 /* studentsManagerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		840428831EAECBB20075EC28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		840D723C1EADA2B4005E3C40 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -162,10 +228,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		840428811EAECBB20075EC28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				840428881EAECBB20075EC28 /* studentsManagerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		840D723A1EADA2B4005E3C40 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				840428801EAEC9BC0075EC28 /* Student.swift in Sources */,
 				840D724A1EADA2B4005E3C40 /* studentsManager.xcdatamodeld in Sources */,
 				84B16F341EADA519008AE438 /* StudensTableViewController.swift in Sources */,
 				840D72421EADA2B4005E3C40 /* AppDelegate.swift in Sources */,
@@ -174,6 +249,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8404288B1EAECBB20075EC28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 840D723D1EADA2B4005E3C40 /* studentsManager */;
+			targetProxy = 8404288A1EAECBB20075EC28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		840D72451EADA2B4005E3C40 /* Main.storyboard */ = {
@@ -195,6 +278,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		8404288D1EAECBB20075EC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = studentsManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DucPT.studentsManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/studentsManager.app/studentsManager";
+			};
+			name = Debug;
+		};
+		8404288E1EAECBB20075EC28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = studentsManagerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DucPT.studentsManagerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/studentsManager.app/studentsManager";
+			};
+			name = Release;
+		};
 		840D72511EADA2B4005E3C40 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -315,6 +424,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8404288C1EAECBB20075EC28 /* Build configuration list for PBXNativeTarget "studentsManagerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8404288D1EAECBB20075EC28 /* Debug */,
+				8404288E1EAECBB20075EC28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		840D72391EADA2B4005E3C40 /* Build configuration list for PBXProject "studentsManager" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
